@@ -1,7 +1,7 @@
 <div role="navigation" aria-label="breadcrumbs navigation">
     <ul class="wy-breadcrumbs">
         <li>
-            <a href="{{ site.baseurl }}/" class="icon icon-home"></a><i class="fa fa-angle-double-right"></i>
+            <a href="{{ site.baseurl }}/">{% octicon home height:18 %}</a> [/]
         </li>
         {%- case page.url -%}
             {%- when "/search.html" %}
@@ -28,14 +28,14 @@
                                 {%- else -%}
                                     {{ block | capitalize }}
                                 {%- endif -%}
-                            </a><i class="fa fa-angle-double-right"></i>
+                            </a> [/]
                         </li>
                     {%- endif -%}
                 {%- endfor -%}
         {%- endcase %}
         {%- if site.edit and site.github_metadata != false -%}
             <li class="wy-breadcrumbs-aside">
-                <a href="{{ github_edit_link }}" class="fa fa-edit" target="_blank"></a>
+                <a href="{{ github_edit_link }}"target="_blank">{% octicon pencil height:16 %}</a>
             </li>
         {%- endif -%}
     </ul>
