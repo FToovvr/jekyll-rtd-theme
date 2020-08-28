@@ -95,6 +95,12 @@ layout: plugins/compress
     <link rel="stylesheet" href="{{ cdn }}/assets/css/theme.css">
     <link rel="stylesheet" href="{{ cdn }}/assets/css/rougify/{{ site.rougify | default: 'github' }}.css">
     <style>{{ site_scss | scssify | strip_newlines }}</style>
+    <style id="style-quick-fixes-by-ftoovvr">
+        blockquote {
+            margin-left: 3px !important;
+            color: black !important;
+        }
+    </style>
     <!-- icon -->
     <link rel="icon" type="image/svg+xml" href="{{ site.baseurl }}/favicon.svg">
     <!-- script -->
